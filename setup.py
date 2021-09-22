@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-setup (
+setup(
     name='math_lib',
     packages=find_packages(include='[math_lib]'),
     version='0.1.0',
