@@ -73,7 +73,7 @@ Each of the 6 math functions test the following types, conversions, and final ev
 * Octal
 
 Unit tests are located in `/tests/` and can be run by issuing command `pytest` at the library root folder  
-    **This can command can only be run if `pipenv` and library dependencies have been installed**  
+    **\*\*This can command can only be run if `pipenv` and library dependencies have been installed\*\***  
 
 All types must convert and evaluate correctly or else the test will fail:
 > ============ test session starts ===============  
