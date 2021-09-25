@@ -33,7 +33,7 @@ This is a Python library which is capable of performing the following math evalu
 Now the library can be imported for use:
 `import from math_lib import math_functions`
 
-### Alternative method
+### Alternative method:
 If you prefer not to use a virtual environment, install dependencies, or build and install the library then you can simply import the library as long as it is in your project folder structure:
 `import from math_lib import math_functions`
 
