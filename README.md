@@ -72,14 +72,14 @@ Each of the 6 math functions test the following types, conversions, and final ev
 * Octal
 
 All types must convert and evaluate correctly or else the test will fail:
-> ============================================= test session starts ==============================================
+> ============ test session starts ===============
 > platform linux -- Python 3.9.5, pytest-6.2.5, py-1.10.0, pluggy-1.0.0
 > rootdir: seng-560_assignment1
 > collected 7 items                                                                                              
 
 > tests/test_functions.py .......                                                                          [100%]
 
-> ============================================== 7 passed in 0.07s ===============================================
+> ============ 7 passed in 0.07s =================
 
 ## Reusability
 All 6 math functions are reusable for all number types outlined in the requirements  
