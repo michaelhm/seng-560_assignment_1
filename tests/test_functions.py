@@ -1,6 +1,6 @@
 from math_lib import math_functions
 
-func = math_functions.MundyMath
+func = math_functions.MundyCalc
 
 def test_setValue():
     result = func.setValue(3, None)
