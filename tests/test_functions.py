@@ -1,58 +1,60 @@
 from math_lib import math_functions
-from operator import add, sub, mul, truediv, pow
-from math import sqrt
 
-math_func = math_functions.math_operations
+func = math_functions.MundyMath
 
-def test_math_operations_add():
-    testInteger = math_func(2, add, 3)
-    testFloating = math_func(2.5, add, 2.5)
-    testBinary = math_func(0b10, add, 0b11)
-    testHexadecimal = math_func(0x02, add, 0x03)
-    testOctal = math_func(0o02, add, 0o03)
-    testSelf = math_func(2, add)
+def test_setValue():
+    result = func.setValue(3, None)
+    assert result == 3
+
+def test_add():
+    testInteger = func.add(2, 3)
+    testFloating = func.add(2.5, 2.5)
+    testBinary = func.add(0b10, 0b11)
+    testHexadecimal = func.add(0x02, 0x03)
+    testOctal = func.add(0o02, 0o03)
+    testSelf = func.add(2)
     assert (testInteger, testFloating, testBinary, testHexadecimal, testOctal, testSelf) == (5, 5, 5, 5, 5, 4)
 
-def test_math_operations_subtract():
-    testInteger = math_func(3, sub, 2)
-    testFloating = math_func(3.5, sub, 2.5)
-    testBinary = math_func(0b11, sub, 0b10)
-    testHexadecimal = math_func(0x03, sub, 0x02)
-    testOctal = math_func(0o03, sub, 0o02)
-    testSelf = math_func(2, sub)
+def test_subtract():
+    testInteger = func.subtract(3, 2)
+    testFloating = func.subtract(3.5, 2.5)
+    testBinary = func.subtract(0b11, 0b10)
+    testHexadecimal = func.subtract(0x03, 0x02)
+    testOctal = func.subtract(0o03, 0o02)
+    testSelf = func.subtract(2)
     assert (testInteger, testFloating, testBinary, testHexadecimal, testOctal, testSelf) == (1, 1, 1, 1, 1, 0)
 
-def test_math_operations_divide():
-    testInteger = math_func(6, truediv, 3)
-    testFloating = math_func(4.4, truediv, 2.2)
-    testBinary = math_func(0b110, truediv, 0b11)
-    testHexadecimal = math_func(0x06, truediv, 0x03)
-    testOctal = math_func(0o06, truediv, 0o03)
-    testSelf = math_func(2, truediv)
+def test_divide():
+    testInteger = func.divide(6, 3)
+    testFloating = func.divide(4.4, 2.2)
+    testBinary = func.divide(0b110, 0b11)
+    testHexadecimal = func.divide(0x06, 0x03)
+    testOctal = func.divide(0o06, 0o03)
+    testSelf = func.divide(2)
     assert (testInteger, testFloating, testBinary, testHexadecimal, testOctal, testSelf) == (2, 2, 2, 2, 2, 1)
 
-def test_math_operations_multiply():
-    testInteger = math_func(2, mul, 3)
-    testFloating = math_func(2.5, mul, 2.4)
-    testBinary =  math_func(0b10, mul, 0b11)
-    testHexadecimal = math_func(0x02, mul, 0x03)
-    testOctal = math_func(0o03, mul, 0o02)
-    testSelf = math_func(2, mul)
+def test_multiply():
+    testInteger = func.multiply(2, 3)
+    testFloating = func.multiply(2.5, 2.4)
+    testBinary =  func.multiply(0b10, 0b11)
+    testHexadecimal = func.multiply(0x02, 0x03)
+    testOctal = func.multiply(0o03, 0o02)
+    testSelf = func.multiply(2)
     assert (testInteger, testFloating, testBinary, testHexadecimal, testOctal, testSelf) ==(6, 6, 6, 6, 6, 4)
 
-def test_math_operations_exponent():
-    testInteger = math_func(2, pow, 3)
-    testFloating = math_func(2.5, pow, 2)
-    testBinary = math_func(0b10, pow, 0b11)
-    testHexadecimal = math_func(0x02, pow, 0x03)
-    testOctal = math_func(0o02, pow, 0o03)
-    testSelf = math_func(2, pow)
+def test_exponent():
+    testInteger = func.power(2, 3)
+    testFloating = func.power(2.5, 2)
+    testBinary = func.power(0b10, 0b11)
+    testHexadecimal = func.power(0x02, 0x03)
+    testOctal = func.power(0o02, 0o03)
+    testSelf = func.power(2)
     assert (testInteger, testFloating, testBinary, testHexadecimal, testOctal, testSelf) == (8, 6.25, 8, 8, 8, 4)
 
-def test_math_operations_sqrt():
-    testInteger = math_func(4, sqrt)
-    testFloating = math_func(4.5, sqrt)
-    testBinary = math_func(0b100, sqrt)
-    testHexadecimal = math_func(0x04, sqrt)
-    testOctal = math_func(0o04, sqrt)
+def test_sqrt():
+    testInteger = func.sqrt(4)
+    testFloating = func.sqrt(4.5)
+    testBinary = func.sqrt(0b100)
+    testHexadecimal = func.sqrt(0x04)
+    testOctal = func.sqrt(0o04)
     assert (testInteger, round(testFloating, 2), testBinary, testHexadecimal, testOctal) == (2, 2.12, 2, 2, 2)
