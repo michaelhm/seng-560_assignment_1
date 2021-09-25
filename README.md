@@ -62,6 +62,7 @@ Conversion between the various types (octal, hexadecimal, integer, binary) is su
 
 ## Unit Tests
 Unit tests can be run by issuing command `pytest` at the library root folder
+    **This can command can only be run if `pipenv` and library dependencies have been installed**
 The library has 100% code coverage (7 tests for 7 functions)
 Each of the 6 math functions test the following types, conversions, and final evaluations:
 * Integer
