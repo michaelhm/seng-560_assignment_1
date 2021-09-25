@@ -3,12 +3,12 @@
 ## MundyCalc
 
 This is a Python library which is capable of performing the following math evaluations:
-\* add
-\* subtract
-\* multiply
-\* divide
-\* power
-\* square root
+* add
+* subtract
+* multiply
+* divide
+* power
+* square root
 
 ## How to Use
 ### Preferred method:
@@ -64,11 +64,11 @@ Conversion between the various types (octal, hexadecimal, integer, binary) is su
 Unit tests can be run by issuing command `pytest` at the library root folder
 The library has 100% code coverage (7 tests for 7 functions)
 Each of the 6 math functions test the following types, conversions, and final evaluations:
-\* Integer
-\* Floating
-\* Binary
-\* Hexadecimal
-\* Octal
+* Integer
+* Floating
+* Binary
+* Hexadecimal
+* Octal
 
 All types must convert and evaluate correctly or else the test will fail:
 > ============================================= test session starts ==============================================
