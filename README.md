@@ -39,6 +39,7 @@ If you prefer not to use a virtual environment, install dependencies, or build a
 
 ### Performing function calls:
 Assign `math_functions.MundyCalc` class to a variable for easier use  
+
 **Example:**  
     `func = math_functions.MundyCalc`  
     `print(func.add(3, 4))`  
@@ -47,8 +48,9 @@ Assign `math_functions.MundyCalc` class to a variable for easier use
 add (`add()`), subtract (`subtract()`), multiply (`multiply()`), divide (`divide()`), and power (`power()`) functions each accept two arguments `x, y`  
 y is an optional argument.
 If only a value for x is passed, then the function will use x's value for y to perform the operation on "itself."  
+
 **Example:**  
-    `add(3)` will evaluate to \<6\> `(3 + 3)`.  
+    `add(3)` will evaluate to **6** `(3 + 3)`.  
     This is to replicate the functionality of a calculator if one was to enter `3 + =`  
     Try it on your phone's calculator :)
 
@@ -57,6 +59,7 @@ Divide function performs a check for divide by zero and displays an appropriate 
 Square root (`sqrt()`) accepts a single argument `x` to perform its calculation
 
 Conversion between the various types (octal, hexadecimal, integer, binary) is supported.
+
 **Binary Example**  
     `add(0b10, 0b11)` evaluates to `5`
 
